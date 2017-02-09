@@ -457,10 +457,7 @@ public final class LiveStreamContainerViewController: UIViewController {
 
     closeBarButtonItem.accessibilityLabel = Strings.Close_live_stream()
 
-    closeBarButtonItem.accessibilityHint = localizedString(
-      key: "Closes_the_live_stream",
-      defaultValue: "Closes the live stream."
-    )
+    closeBarButtonItem.accessibilityHint = Strings.Closes_live_stream()
 
     return closeBarButtonItem
   }()
@@ -471,10 +468,7 @@ public final class LiveStreamContainerViewController: UIViewController {
       |> UIBarButtonItem.lens.tintColor .~ .white
       |> UIBarButtonItem.lens.targetAction .~ (self, #selector(share))
 
-    shareBarButtonItem.accessibilityLabel = localizedString(
-      key: "Share_this_live_stream",
-      defaultValue: "Share this live stream."
-    )
+    shareBarButtonItem.accessibilityLabel = Strings.Share_this_live_stream()
 
     return shareBarButtonItem
   }()
